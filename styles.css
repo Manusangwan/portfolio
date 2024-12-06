@@ -1,0 +1,160 @@
+body{
+    display: flex;
+    background: linear-gradient(to bottom right, #283048, #859398);
+    font-family: 'roboto', sans-serif;
+    color:#fff;
+    
+}
+.left{
+    margin-top: 2vw;
+    margin-left: 5vw;
+    box-sizing: border-box;
+    border-width: 25vw;   
+    
+    
+    background-color: rgba(47,79,79,0.9);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    align-content: center;
+    width: 25vw;
+}
+.left #left{
+    margin-top: 0.4vw;
+    margin-left: 2vw;
+}
+.left img{
+    align-content: center;
+    height: 8vw;
+    width:8vw;
+    border-radius: 50%;
+    object-fit: cover;    
+}
+
+.left .ai{
+    align-content: center;
+    height: 2vw;
+    width:2vw;
+    border-radius: 50%;
+    object-fit: cover;    
+}
+
+.left span{
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+.left h2{
+    font-size: 2.5vw;
+}
+.left img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+span:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+.skill-bar {
+    margin: 10px 0;
+}
+.progress {
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 8px;
+    width: 90%;
+    overflow: hidden;
+}
+.progress-fill {
+    background-color: #2a9d8f;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+
+
+
+
+.right{
+    flex: right;
+    width: 65vw;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    
+    align-content: center;
+    margin-top: 2vw;
+    margin-right: 5vw;
+}
+.right .me{float:center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-top: 0px;
+    }
+.right .me .h1{
+    margin-top: 5vw;
+    margin-left: 3vw;
+    color: black;
+    font-family: 'poppins', sans-serif;
+    font-size: 3.0vw;
+    font-weight: bold;
+
+}
+.right .me .h2{
+    font-family: 'poppins', sans-serif;
+    margin-top: 0vw;
+    font-size: 2.5vw;
+    margin-left: 3vw;
+    color: black;
+    font-weight: bold;
+    
+}
+
+
+.right #aboutme .about, .edu{
+    flex: right;
+    /*width: 60vw;*/
+    font-size: 1.6vw;
+    
+} 
+.right #aboutme .about img, .edu img, .ex img{
+    
+    height: 3vw;
+    width:3vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    border-radius: 50%;
+    object-fit: cover;    
+} 
+
+.right #aboutme p{
+    margin-left: 0.52vw;
+    margin-right: 5vw;
+    margin-top: 0vw;
+    font-size: 1vw;
+}
+@media (max-width: 768px) {
+    .left, .right {
+        flex: 1 0 100%;
+        margin: 10px 0;
+    }
+    .left img, .ai {
+        width: 60px;
+        height: 60px;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.left, .right {
+    animation: fadeIn 1s ease-in-out;
+}
